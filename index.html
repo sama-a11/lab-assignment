@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>My Blog</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Alert: رسالة للمستخدم -->
+        <div class="alert alert-success" role="status">
+            Welcome! Your blog loaded successfully.
+        </div>
+
+        <section>
+            <h2>Latest Posts</h2>
+
+            <!-- Grid: عمود / عمودين / 3 أعمدة حسب الشاشة -->
+            <div class="posts">
+                <article>
+                    <h3>Learning HTML</h3>
+                    <p>HTML is the foundation of every website.</p>
+                </article>
+
+                <article>
+                    <h3>Why CSS Matters</h3>
+                    <p>CSS makes pages look great.</p>
+                </article>
+
+                <article>
+                    <h3>Responsive Design</h3>
+                    <p>Your page should look good on every screen size.</p>
+                </article>
+            </div>
+        </section>
+
+        <section>
+            <h2>Modal Window (CSS only)</h2>
+            <a href="#modal" class="btn">Open Modal</a>
+        </section>
+
+        <!-- Modal: بيظهر لما اللينك #modal يتضغط (:target) -->
+        <div id="modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+            <div class="modal-content">
+                <h2 id="modal-title">Hello!</h2>
+                <p>This modal is built with CSS only, no JavaScript.</p>
+                <a href="#" class="btn">Close</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 My Blog</p>
+    </footer>
+
+</body>
+</html>
